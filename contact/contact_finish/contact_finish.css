@@ -1,0 +1,366 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+}
+h1,h2,p{
+    color: #186AA5;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: normal;
+}
+.circle-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.right-circle{
+    position: absolute;
+    width: 60%;
+    top: 0%;
+    right: 0%;
+    transform: translate(-0%, 0%);
+    z-index: -2;
+}
+.contents{
+    position: absolute;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    z-index: 3;
+}
+#section2 h1{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 20rem;
+}
+
+#section2{
+    height: 1500px;
+    width: 100%;
+}
+
+.contact-finish{
+    position: relative;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    width: 80%;
+    height: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px  darkgray;
+    text-align: center;
+}
+.contact-finish h2{
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 100%;
+    font-size: 5rem;
+    color: #ffffff;
+    background-image: linear-gradient(45deg, #709dff 0%, #b0c9ff 100%);
+}
+.contact-finish p{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -60%); 
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+}
+.contact-finish a{
+    font-size: 1.5rem;
+    color: gray;
+}
+.p2{
+   margin-top: 200px;
+}
+.footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color:#A6ADB4;
+    box-shadow: 1px 1px 5px  darkgray;
+}
+.right{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.left{
+    position: absolute;
+    bottom: 50%;
+    left: 3%;
+    transform: translate(0,50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+
+@media (max-width: 1500px) {
+   
+}
+
+
+ @media (max-width: 1200px) {
+   
+ }
+
+ @media (min-width:900px) and (max-width: 1025px) {
+   
+
+ }
+
+ @media (orientation:landscape) and 
+ (max-width:1025px){
+   
+ }
+
+ @media (max-width: 900px) {
+  
+ 
+ }
+
+ @media (orientation:landscape) and 
+ (max-width:900px){
+    .contact-finish{
+        height: 650px;
+        margin-bottom: 20rem;
+    }
+ }
+
+ @media (max-width: 769px) {
+   
+ }
+
+ @media (orientation:landscape) and 
+ (max-width:769px){
+
+    .contact-finish{
+        position: relative;
+        width: 100%;
+        height: 600px;
+    }
+    .contact-finish h2{
+        position: absolute;
+        top:20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        font-size: 5rem;
+    }
+    .contact-finish p{
+        position: absolute;
+        top:60%;
+        left: 50%;
+        transform: translate(-50%, -60%); 
+        font-size: 3.2rem;
+    }
+    .contact-finish a{
+        font-size: 1.8rem;
+    }
+    .p2{
+       margin-top: 200px;
+    }
+ }
+
+ @media (max-width: 700px) {
+    .contact-finish{
+        position: relative;
+        width: 100%;
+        height: 600px;
+    }
+    .contact-finish h2{
+        position: absolute;
+        top:20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        font-size: 4rem;
+    }
+    .contact-finish p{
+        position: absolute;
+        top:60%;
+        left: 50%;
+        transform: translate(-50%, -60%); 
+        font-size: 2.8rem;
+    }
+    .contact-finish a{
+        font-size: 1.5rem;
+    }
+    .p2{
+       margin-top: 200px;
+    }
+ }
+
+ @media (max-width: 599px) {
+    .contact-finish{
+        position: relative;
+        width: 100%;
+        height: 600px;
+    }
+    .contact-finish h2{
+        position: absolute;
+        top:20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        font-size: 3rem;
+    }
+    .contact-finish p{
+        position: absolute;
+        top:60%;
+        left: 50%;
+        transform: translate(-50%, -60%); 
+        font-size: 2.3rem;
+    }
+    .contact-finish a{
+        font-size: 1.3rem;
+    }
+    .p2{
+       margin-top: 200px;
+    }
+ }
+
+ @media (max-width: 481px) {
+    .contact-finish{
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+    .contact-finish h2{
+        position: absolute;
+        top:20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        font-size: 3rem;
+    }
+    .contact-finish p{
+        position: absolute;
+        top:60%;
+        left: 50%;
+        transform: translate(-50%, -60%); 
+        font-size: 2.3rem;
+    }
+    .contact-finish a{
+        font-size: 1.3rem;
+    }
+    .p2{
+       margin-top: 150px;
+    }
+ }
+
+ @media (max-width: 416px) {
+    #section2{
+        height: 1000px;
+    }
+    .contact-finish{
+        position: relative;
+        width: 100%;
+        height: 600px;
+    }
+    .contact-finish h2{
+        position: absolute;
+        top:20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        font-size: 2.8rem;
+    }
+    .contact-finish p{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        font-size: 2rem;
+    }
+    .contact-finish a{
+        font-size: 1.3rem;
+    }
+    .p2{
+       margin-top: 200px;
+    }
+ }
+
+ @media (max-width: 376px) {
+     #section2{
+         height: 900px;
+     }
+    .contact-finish{
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+    .contact-finish h2{
+        position: absolute;
+        top:20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        font-size: 2.8rem;
+    }
+    .contact-finish p{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        font-size: 1.8rem;
+    }
+    .contact-finish a{
+        font-size: 1.3rem;
+    }
+    .p2{
+       margin-top: 180px;
+    }
+ }
+
+ @media (max-width: 321px) {
+     #section2{
+         height: 700px;
+     }
+    .contact-finish{
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .contact-finish h2{
+        position: absolute;
+        top:20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        font-size: 2.5rem;
+    }
+    .contact-finish p{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        font-size: 1.5rem;
+    }
+    .contact-finish a{
+        font-size: 1.2rem;
+    }
+    .p2{
+       margin-top: 150px;
+    }
+ }

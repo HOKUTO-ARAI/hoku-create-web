@@ -1,0 +1,2299 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    color: #fff;
+}
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html{
+    font-size: 62.5%;
+}
+h1,h2,p{
+    color: #186AA5;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: normal;
+}
+.circle-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    z-index: -9;
+}
+.right-circle{
+    position: absolute;
+    width: 60%;
+    top: 0%;
+    right: 0%;
+    transform: translate(-0%, -0%);
+    z-index: -7;
+}
+.left-circle{
+    position: absolute;
+    width: 60%;
+    top: 40%;
+    left: 0%;
+    transform: translate(-0%, -40%);
+  z-index: -7;
+}
+.right-circle2{
+    position: absolute;
+    width: 60%;
+    top: 75%;
+    right: 0%;
+    transform: translate(-0%, -75%);
+    z-index: -7;
+}
+
+
+.contents{
+    position: absolute;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#section1{
+    height: 1080px;
+    position: relative;
+}
+
+ #section3-service, #section4, #section5-contact{
+    width: 100%;
+    margin-top: 60rem;
+    margin-bottom: 60rem;
+}
+#section-news{
+    width: 100%;
+    height: auto;
+  padding-bottom: 10rem;
+}
+#section2-about{
+    width: 100%;
+    margin-bottom: 60rem;
+}
+#section6{
+    width: 100%;
+    margin-top: 30rem;
+    padding-bottom: 30rem;
+}
+
+ #section-news h1 ,#section2-about h1, #section3-service h1, #section4 h1, #section5-contact h1, #section6 h1{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 20rem;
+}
+#section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+
+
+
+.top-title{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-10%,-30%);
+    font-size: 5rem;
+    color: #fff;
+}
+.top-image{
+    width: 100%;
+    height: 1080px;
+    opacity: 0.9;
+    z-index: 2;
+    vertical-align: bottom;
+    background-image: url(images\top-image.jpeg);
+}
+.service-moc{
+    position: absolute;
+    width: 60%;
+    top: 30%;
+    right: 1%;
+    transform: translate(-1%, -30%);
+}
+
+
+.news	{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+	border: solid 1px black;
+}
+
+.news .news-list li{
+display: block;
+margin: 3px;
+z-index: 30;
+}
+
+.news .news-list	{margin: 0;
+	padding: 0;
+	list-style: none}
+
+.news li a	{
+    display:block;
+    width: 100%;
+	padding: 5px;
+	border-bottom: dotted 2px darkgray;
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.news li a:hover	{
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.news time	{color: #888888;
+	font-weight: bold}
+
+.news a:after	{content: "";
+	display: block;
+	clear: both}
+
+.news time	{float: left;
+	width: 60px}
+
+.news .text	{float: none;
+	width: auto;
+	margin-left: 60px;
+}
+
+
+
+    
+.demerit{
+    width: 100%;
+    margin-top: 30rem;
+    margin-bottom: 15rem;
+}
+.demerit-content{
+    position: relative;
+    width: 70%;
+    height: 300px;
+   border: dotted #186AA5 3px;
+   background-color: rgba(255, 255, 255, 0.5);
+   margin-right: auto;
+   margin-left: auto;
+}
+.demerit-content p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+ }
+
+.merit{
+    width: 100%;
+    margin-top: 15rem;
+    margin-bottom: 30rem;
+}
+.merit-content{
+    position: relative;
+    width: 70%;
+    height: 300px;
+    border: dotted #186AA5 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.merit-content p{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   font-size: 1.8rem;
+   font-weight: bold;
+}
+
+.problem{
+    width: 100%;
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+}
+.problem-card{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+
+
+.problem-card-sort{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 8rem;
+    border-radius: 3%;
+   background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+}
+.problem-title{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.problem-content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.solution{
+    width: 100%;
+    margin-top: 50rem;
+    margin-bottom: 30rem;
+  
+}
+.solution-card{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.solution-card-sort{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 8rem;
+    border-radius: 3%;
+   background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+}
+.solution-title{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.solution-content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.service{
+    width: 100%;
+}
+.service-card{
+    display: flex;
+    width: 100%;
+    margin-top: 20rem;
+}
+.service-card a{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+    text-align: center;
+   background-color: rgba(255, 255, 255, 0.1);
+   box-shadow: grey 1px 1px 1px 0px;
+}
+.service-card a:hover{
+   background-color: rgba(255, 255, 255, 0.3);
+   box-shadow: grey 2px 2px 2px 0px;
+}
+.service-title{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.service-content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    font-size: 1.2rem;
+}
+.service-image{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    width: 30%;
+}
+
+.works{
+    width: 100%;
+}
+.works-card1{
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+}
+.works-card2{
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+}
+.works-card-sort{
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.works-image1:hover{
+   opacity: 0.5;
+}
+.works-image2:hover{
+    opacity: 0.5;
+ }
+ .works-image3:hover{
+    opacity: 0.5;
+ }
+ .works-image4:hover{
+    opacity: 0.5;
+ }
+
+.works-title{
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.works-content{
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+}
+.works-image1{
+    width: 100%;
+    border: solid 1px black;
+}
+.works-image2{
+    width: 100%;
+    border: solid 1px black;
+}
+.works-image3{
+    width: 100%;
+    border: solid 1px black;
+}
+.works-image4{
+    width: 100%;
+    border: solid 1px black;
+}
+
+
+/*モーダルを開くボタン*/
+
+  /*モーダル本体の指定 + モーダル外側の背景の指定*/
+  .modal-container1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    z-index: 5000;
+  }
+  /*モーダル本体の擬似要素の指定*/
+  .modal-container1:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  /*モーダル本体に「active」クラス付与した時のスタイル*/
+  .modal-container1.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  /*モーダル枠の指定*/
+  .modal-body{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 1000px;
+    width: 90%;
+  }
+  /*モーダルを閉じるボタンの指定*/
+  .modal-close{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -40px;
+    left: -40px;
+
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+  /*モーダル内のコンテンツの指定*/
+  .modal-content{
+    background: #fff;
+  }
+ 
+  .L{
+      width: 100%;
+      height: 100%;
+  }
+
+
+
+  .modal-container2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    z-index: 5000;
+  }
+  /*モーダル本体の擬似要素の指定*/
+  .modal-container2:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  /*モーダル本体に「active」クラス付与した時のスタイル*/
+  .modal-container2.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  
+  .modal-container3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    z-index: 5000;
+  }
+  /*モーダル本体の擬似要素の指定*/
+  .modal-container3:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  /*モーダル本体に「active」クラス付与した時のスタイル*/
+  .modal-container3.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  .modal-container4{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    z-index: 5000;
+  }
+  /*モーダル本体の擬似要素の指定*/
+  .modal-container4:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  /*モーダル本体に「active」クラス付与した時のスタイル*/
+  .modal-container4.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+.contact{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right,rgba(187, 255, 0, 0.5),rgba(0, 220, 255, 0.5));
+    
+}
+.contact-text-all{
+    width: 100%;
+    margin-top: 10%;
+ 
+    padding-top: 2%;
+}
+.contact-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+.ctr-contact{
+  position: absolute;
+  width: 25%;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50% ,-10%);
+}
+.contact a:hover{
+    opacity: 0.7;
+}
+
+
+
+.menu{
+    width: 100%;
+}
+.menu-card{
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+}
+.menu-card a{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+    text-align: center;
+   background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+}
+.menu-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.menu-icon{
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+}
+
+.menu-card a:hover{
+   background: linear-gradient(to right,rgb(96, 186, 255),rgba(12, 149, 254, 0.8));
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width: 1200px) {
+   
+}
+
+@media (max-width: 1500px) {
+    #section-news h1 ,#section2-about h1, #section3-service h1, #section4 h1, #section5-contact h1, #section6 h1{
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 20rem;
+    }
+    #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    #section1{
+        height: 1024px;
+        position: relative;
+    }
+    .top-title{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%,-50%);
+        font-size: 5.5rem;
+        color: #fff;
+    }
+  
+    .service-moc{
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        right: 1%;
+        transform: translate(-1%, -50%);
+    }
+  
+
+
+.news time	{
+    font-size: 2.5rem;
+}
+.news .text	{
+	margin-left: 10%;
+    font-size: 2.5rem;
+}
+
+    .demerit-content{
+        width: 90%;
+        height: 300px;
+   
+    }
+    .demerit-content p{
+        font-size: 2.5rem;
+     }
+    
+
+    .merit-content{
+        width: 90%;
+        height: 300px;
+      
+        
+    }
+    .merit-content p{
+       font-size: 2.5rem;
+     
+    }
+
+
+    .problem-card-sort{
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border-radius: 3%;
+       background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+    }
+    .problem-title{
+        font-size: 2.5rem;
+    }
+    .problem-content{
+        font-size: 2.3rem;
+    }
+    .solution-card-sort{
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border-radius: 3%;
+       background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+    }
+    .solution-title{
+        font-size: 2.5rem;
+    }
+    .solution-content{
+        font-size: 2.3rem;
+    }
+    .service-card a{
+        position: relative;
+        width: 400px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3%;
+        text-align: center;
+       background-color: rgba(255, 255, 255, 0.1);
+       box-shadow: grey 1px 1px 1px 0px;
+    }
+    .service-content{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,-10%);
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+    .works-card-sort{
+        width: 450px;
+        height: 300px;
+    }
+    .works-title{
+        font-size: 2.6rem;
+    }
+    .works-content{
+        font-size: 2rem;
+    }
+    .contact{
+        width: 100%;
+        height: 400px;
+        
+    }
+    .contact-title{
+        font-size: 4.5rem;
+    }
+    .ctr-contact{
+      width: 40%;
+    }
+    .menu-card a{
+        width: 400px;
+        height: 230px;
+    }
+    .menu-title{
+        font-size: 3.5rem;
+    }
+    .menu-icon{
+        width: 20%;
+   }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+
+ #section3-service, #section4, #section5-contact{
+    width: 100%;
+    margin-top: 60rem;
+    margin-bottom: 60rem;
+}
+#section2-about{
+    width: 100%;
+    margin-bottom: 60rem;
+}
+#section6{
+    width: 100%;
+    margin-top: 30rem;
+    padding-bottom: 30rem;
+}
+
+#section-news h1 ,#section2-about h1, #section3-service h1, #section4 h1, #section5-contact h1, #section6 h1{
+    text-align: center;
+    font-size: 4.3rem;
+    margin-bottom: 20rem;
+}
+#section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+#section1{
+    height: 834px;
+    position: relative;
+}
+.top-title{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%,-50%);
+}
+
+.top-image{
+    height: 834px;
+}
+.service-moc{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    right: 1%;
+    transform: translate(-1%, -50%);
+}
+
+.news time	{
+    font-size: 2rem;
+}
+.news .text	{
+    font-size: 2rem;
+}
+
+.demerit-content p{
+    font-size: 2.2rem;
+ }
+
+.merit-content p{
+   font-size: 2.2rem;
+ 
+}
+.problem{
+    width: 100%;
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+}
+.problem-card{
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.problem-card-sort{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 3%;
+   background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+}
+.problem-title{
+    font-size: 2rem;
+}
+.problem-content{
+    font-size: 1.8rem;
+}
+
+
+.solution-card-sort{
+    width: 300px;
+    height: 200px; 
+}
+.solution-title{
+    font-size: 2rem;
+}
+.solution-content{
+    font-size: 1.8rem;
+}
+
+
+.service-card{
+    display: flex;
+    width: 100%;
+    margin-top: 20rem;
+}
+.service-card a{
+    position: relative;
+    width: 340px;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+    text-align: center;
+   background-color: rgba(255, 255, 255, 0.1);
+   box-shadow: grey 1px 1px 1px 0px;
+}
+.service-title{
+    font-size: 1.5rem; 
+}
+.service-content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    font-size: 1.1rem;
+}
+.service-image{
+    width: 30%;
+}
+.works-card-sort{
+    width: 380px;
+    height: 260px;
+}
+.works-title{
+    font-size: 2rem;
+}
+.works-content{
+    font-size: 1.6rem;
+}
+.contact{
+    width: 100%;
+    height: 300px;
+    
+}
+.contact-title{
+    font-size: 3rem;
+}
+.ctr-contact{
+  width: 30%;
+}
+.menu-card a{
+    position: relative;
+    width: 320px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+    text-align: center;
+   background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+}
+.menu-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.menu-icon{
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+}
+
+
+
+
+}
+
+
+
+
+
+@media (min-width:900px) and (max-width: 1025px) {
+  
+    #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .news time	{
+        font-size: 2.2rem;
+    }
+    .news .text	{
+        margin-left: 10%;
+        font-size: 2.2rem;
+    }
+  
+    .problem-card-sort{
+        width: 400px;
+        height: 230px; 
+    }
+    .problem-title{
+        font-size: 2.5rem;
+    }
+    .problem-content{
+        font-size: 2.3rem;
+    }
+  
+    .solution-card-sort{
+        width: 400px;
+        height: 230px; 
+    }
+    .solution-title{
+        font-size: 2.5rem;
+    }
+    .solution-content{
+        font-size: 2.3rem;
+    }
+    .service-card{
+        display: initial;
+    }
+   
+    .service-card a{
+        display: block;
+    }
+    
+    .service-card a{
+        position: relative;
+        width: 500px;
+        height: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10rem;
+        border-radius: 3%;
+        text-align: center;
+       background-color: rgba(255, 255, 255, 0.1);
+       box-shadow: grey 1px 1px 1px 0px;
+    }
+    .service-title{
+        font-size: 2rem; 
+    }
+    .service-content{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,-0%);
+        font-size: 1.6rem;
+    }
+    .service-image{
+        width: 30%;
+    }
+      
+    .ctr-contact{
+        position: absolute;
+        width: 40%;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50% ,-10%);
+      }
+
+
+  
+
+
+}
+
+@media (orientation:landscape) and 
+    (max-width:1025px){
+   
+
+        #section3-service, #section4, #section5-contact{
+            width: 100%;
+            margin-top: 50rem;
+            margin-bottom: 50rem;
+        }
+        #section2-about{
+            width: 100%;
+            margin-bottom: 50rem;
+        }
+        #section6{
+            width: 100%;
+            margin-top: 30rem;
+            padding-bottom: 30rem;
+        }
+        #section-news h1 ,#section2-about h1, #section3-service h1, #section4 h1, #section5-contact h1, #section6 h1{
+            text-align: center;
+            font-size: 4rem;
+            margin-bottom: 20rem;
+        }
+        #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+            font-size: 3rem;
+            text-align: center;
+        }
+
+
+        #section1{
+            height: 768px;
+            position: relative;
+        }
+
+        .top-title{
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-10%,-50%);
+            font-size: 4rem;
+            color: #fff;
+        }
+       
+        .service-moc{
+            position: absolute;
+            width: 60%;
+            top: 50%;
+            right: 1%;
+            transform: translate(-1%, -50%);
+        }
+        
+
+     
+
+
+        .problem{
+            width: 100%;
+            margin-top: 30rem;
+            margin-bottom: 30rem;
+        }
+        .problem-card{
+            width: 100%;
+            margin-top: 10rem;
+        }
+  
+        .problem-card-sort{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border-radius: 3%;
+           background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+        }
+        .problem-title{
+            font-size: 2rem;
+        }
+        .problem-content{
+            font-size: 1.8rem;
+        }
+     
+
+
+
+
+       
+        .solution-card-sort{
+            width: 300px;
+            height: 200px; 
+        }
+        .solution-title{
+            font-size: 2rem;
+        }
+        .solution-content{
+            font-size: 1.8rem;
+        }
+
+
+
+
+        .service-card a{
+            display: block;
+        }
+      
+
+        .service-card a{
+            position: relative;
+            width: 500px;
+            height: 380px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10rem;
+            border-radius: 3%;
+            text-align: center;
+           background-color: rgba(255, 255, 255, 0.1);
+           box-shadow: grey 1px 1px 1px 0px;
+        }
+        .service-title{
+            font-size: 2rem; 
+        }
+        .service-content{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,-0%);
+            font-size: 1.6rem;
+        }
+        .service-image{
+            width: 30%;
+        }
+
+        .menu-card a{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 3%;
+            text-align: center;
+           background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+        }
+        .menu-title{
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .menu-icon{
+            position: absolute;
+            width: 18%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 5%;
+        }
+       
+        .ctr-contact{
+          position: absolute;
+          width: 32%;
+          bottom: 10%;
+          left: 50%;
+          transform: translate(-50% ,-10%);
+        }
+
+
+    }
+
+
+
+
+@media (max-width: 900px) {
+
+#section3-service, #section4, #section5-contact{
+    width: 100%;
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+}
+#section2-about{
+    width: 100%;
+    margin-bottom: 30rem;
+}
+#section6{
+    width: 100%;
+    margin-top: 30rem;
+    padding-bottom: 30rem;
+}
+
+#section-news h1 ,#section2-about h1, #section3-service h1, #section4 h1, #section5-contact h1, #section6 h1{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 20rem;
+}
+#section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#section1{
+    height: 1194px;
+    position: relative;
+}
+#section3-service{
+    margin-top: 20rem;
+}
+.top-title{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+   font-size: 7rem;
+}
+
+.service-moc{
+    position: absolute;
+    width: 80%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+.news time	{
+    font-size: 2.2rem;
+}
+.news .text	{
+	margin-left: 15%;
+    font-size: 2.2rem;
+}
+.demerit-content{
+    width: 90%;
+    height: 380px;
+}
+.demerit-content p{
+    font-size: 2.3rem;
+ }
+
+
+.merit-content{
+    width: 90%;
+    height: 380px;
+}
+.merit-content p{
+   font-size: 2.3rem;
+  
+}
+
+
+
+.problem{
+    width: 100%;
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+}
+.problem-card{
+    position: relative;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.problem-card-sort{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10rem;
+    border-radius: 3%;
+   background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+}
+
+.problem-title{
+    font-size: 2.2rem;
+}
+.problem-content{
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+.solution{
+    width: 100%;
+    margin-top: 30rem;
+    margin-bottom: 10rem;
+}
+.solution-card{
+    position: relative;
+    width: 100%;
+    margin-top: 10rem;
+    
+}
+
+.solution-card-sort{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10rem;
+}
+.solution-title{
+    font-size: 2.2rem;
+}
+.solution-content{
+    font-size: 1.8rem;
+}
+
+.service{
+    width: 100%;
+}
+.service-card a{
+    display: initial;
+  }
+  .service-card{
+    display: initial;
+    width: 100%;
+    margin-top: 20rem;
+}
+
+.service-card a{
+  display: block;
+}
+.service-card a{
+    position: relative;
+    width: 60%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+    border-radius: 3%;
+    text-align: center;
+   background-color: rgba(255, 255, 255, 0.1);
+   box-shadow: grey 1px 1px 1px 0px;
+}
+.service-title{
+    font-size: 1.8rem;
+    font-weight: bold; 
+}
+.service-content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.service-image{
+    width: 27%;
+}
+
+.ctr-contact{
+    width:40%;
+  }
+
+
+
+  .menu-card a{
+    width: 250px;
+    height: 170px;
+}
+.menu-title{
+    font-size: 2.3rem;
+}
+.menu-icon{
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+}
+
+
+}
+
+@media (orientation:landscape) and (max-width:900px){
+    #section-news h1 ,#section2-about h1, #section3-service h1, #section4 h1, #section5-contact h1, #section6 h1{
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 20rem;
+    }
+    #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    #section1{
+        height: 800px;
+    }
+    
+    .top-title{
+        position: absolute;
+        width: auto;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%,-50%);
+        font-size: 4rem;
+        color: #fff;
+    }
+    .service-moc{
+        position: absolute;
+        width: 40%;
+        top: 50%;
+        right: 1%;
+        transform: translate(-1%, -50%);
+    }
+    .news time	{
+        font-size: 1.6rem;
+    }
+    .news .text	{
+       margin-left: 10%;
+        font-size: 1.6rem;
+    }
+    .demerit-content{
+        width: 90%;
+        height: 300px;
+    }
+    .demerit-content p{
+        font-size: 1.8rem;
+     }
+    
+    
+    .merit-content{
+        width: 90%;
+        height: 300px;
+    }
+    .merit-content p{
+       font-size: 1.8rem;
+      
+    }
+
+     }
+
+
+
+
+
+
+
+
+     @media (max-width: 769px) {
+        #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+            font-size: 2.5rem;
+        }
+        #section1{
+            height: 1024px;
+        }
+        .service-card a{
+            position: relative;
+            width: 70%;
+            height: 380px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10rem;
+            border-radius: 3%;
+            text-align: center;
+           background-color: rgba(255, 255, 255, 0.1);
+           box-shadow: grey 1px 1px 1px 0px;
+        }
+        .service-title{
+            font-size: 2rem;
+            font-weight: bold; 
+        }
+        .service-content{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,-0%);
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+        .service-image{
+            width: 27%;
+        }
+        .works-card-sort{
+            width: 320px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .ctr-contact{
+            width:50%;
+          }
+          .menu-card a{
+            width: 230px;
+            height: 160px;
+        }
+        .menu-title{
+            font-size: 2.3rem;
+        }
+        .menu-icon{
+            position: absolute;
+            width: 25%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 5%;
+        }
+
+
+     }
+
+
+
+
+
+
+
+     @media (orientation:landscape) and
+(max-width: 769px) {
+    #section1{
+        height: 800px;
+    }  
+    .top-title{
+        position: absolute;
+        width: auto;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%,-50%);
+        font-size: 3.5rem;
+        color: #fff;
+    }
+ 
+    .service-moc{
+        position: absolute;
+        width: 40%;
+        top: 50%;
+        right: 1%;
+        transform: translate(-1%, -50%);
+    }
+}
+
+
+     @media (max-width: 700px) {
+ 
+        .top-title{
+            position: absolute;
+            width: auto;
+            top: 50%;
+            left: 10%;
+            transform: translate(-10%,-50%);
+            font-size: 3.2rem;
+            color: #fff;
+        }
+     
+        .service-moc{
+            position: absolute;
+            width: 40%;
+            top: 50%;
+            right: 1%;
+            transform: translate(-1%, -50%);
+        }
+        .news time	{
+            font-size: 1.5rem;
+        }
+        .news .text	{
+            margin-left: 15%;
+            font-size: 1.5rem;
+        }
+        .news	{
+            border: solid 3px darkgrey;
+        }
+         #section1{
+            height: 500px;
+        }  
+        #section-news h1 ,#section2-about h1, #section3-service h1, #section4 h1, #section5-contact h1, #section6 h1{
+            font-size: 2.8rem;
+        }
+        #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+            font-size: 2rem;
+        }
+        .demerit-content{
+            width: 90%;
+            height: 250px;
+        }
+        .demerit-content p{
+            font-size: 1.5rem;
+         }
+        
+        
+        .merit-content{
+            width: 90%;
+            height: 250px;
+        }
+        .merit-content p{
+           font-size: 1.5rem;
+        }
+        .problem-card-sort{
+            position: relative;
+            width: 250px;
+            height: 180px;
+            margin-bottom: 5rem;
+        }
+        
+        .problem-title{
+            font-size: 1.7rem;
+        }
+        .problem-content{
+            font-size: 1.4rem;
+        }
+        .solution-card-sort{
+            position: relative;
+            width: 250px;
+            height: 180px;
+            margin-bottom: 5rem;
+        }
+        
+        .solution-title{
+            font-size: 1.7rem;
+        }
+        .solution-content{
+            font-size: 1.4rem;
+        }
+         .works-card-sort{
+            width: 250px;
+            height: 180px;
+        }
+        .works-title{
+            font-size: 1.4rem;
+        }
+        .works-content{
+            font-size: 1rem;
+        }
+        .contact{
+            height: 180px;  
+        }
+        .contact-title{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .ctr-contact{
+          width: 40%;
+        }
+        .menu-card a{
+            width: 150px;
+            height: 100px;
+        }
+        .menu-title{
+            font-size: 1.5rem;
+        }
+        .menu-icon{
+            width: 25%;
+        }
+        .service-card a{
+            position: relative;
+            width: 80%;
+            height: 300px;
+            margin-bottom: 10rem;
+        }
+        .service-title{
+            font-size: 1.5rem;
+        }
+        .service-content{
+            font-size: 1.3rem;
+        }
+        .service-image{
+            width: 27%;
+        }
+      
+        .menu-title{
+            font-size: 1.5rem;
+        }
+        .menu-icon{
+            width: 20%;
+        }
+
+
+
+     }
+
+     @media (max-width: 599px) {
+        #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        .top-title{
+            position: absolute;
+            width: auto;
+            top: 50%;
+            left: 10%;
+            transform: translate(-10%,-50%);
+            font-size: 2.8rem;
+            color: #fff;
+        }
+     
+        .service-moc{
+            position: absolute;
+            width: 40%;
+            top: 50%;
+            right: 1%;
+            transform: translate(-1%, -50%);
+        }
+        .news time	{
+            font-size: 1.4rem;
+        }
+        .news .text	{
+            margin-left: 15%;
+            font-size: 1.4rem;
+        }
+        .news .news-list li{
+            margin: 0;
+            }
+     }
+
+     @media (max-width: 481px) {
+        #section1{
+            height: 320px;
+        }  
+        .top-title{
+            position: absolute;
+            width: auto;
+            top: 50%;
+            left: 10%;
+            transform: translate(-10%,-50%);
+            font-size: 2.5rem;
+            color: #fff;
+        }
+     
+        .service-moc{
+            position: absolute;
+            width: 40%;
+            top: 50%;
+            right: 1%;
+            transform: translate(-1%, -50%);
+        }
+        .news time	{
+            font-size: 1.3rem;
+        }
+        .news .text	{
+            margin-left: 10%;
+            font-size: 1.3rem;
+        }
+        .problem-card-sort{
+            position: relative;
+            width: 180px;
+            height: 130px;
+            margin-bottom: 1rem;
+        }
+        .problem-title{
+            font-size: 1.5rem;
+        }
+        .problem-content{
+            font-size: 1.3rem;
+        }
+        .solution-card-sort{
+            width: 180px;
+            height: 130px; 
+            margin-bottom: 1rem;
+        }
+        .solution-title{
+            font-size: 1.5rem;
+        }
+        .solution-content{
+            font-size: 1.3rem;
+        }
+        .works-card1{ 
+            margin-top: 5rem;
+        }
+        .works-card2{
+            margin-top: 5rem;
+        }
+        .works-card-sort{
+            width: 180px;
+            height: 150px;
+        }
+        .works-title{
+            font-size: 1.4rem;
+        }
+        .works-content{
+            font-size: 1rem;
+        }
+        .ctr-contact{
+            width: 50%;
+          }
+          .menu-card a{
+            width: 140px;
+            height: 80px;
+        }
+        .menu-title{
+            font-size: 1.5rem;
+        }
+        .menu-icon{
+            width: 20%;
+        }
+     
+     }
+
+
+
+
+     @media (max-width: 416px) {
+        #section3-service, #section4, #section5-contact{
+            width: 100%;
+            margin-top: 15rem;
+            margin-bottom: 15rem;
+        }
+        #section2-about{
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+        #section6{
+            width: 100%;
+            margin-top: 15rem;
+            padding-bottom: 15rem;
+        }
+        
+        #section-news h1 ,#section2-about h1, #section3-service h1, #section4 h1, #section5-contact h1, #section6 h1{
+            font-size: 2.2rem;
+            margin-bottom: 10rem;
+        }
+        #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+            font-size: 1.8rem;
+        }
+        #section1{
+            height: 896px;
+        }
+        #section-news{
+          padding-bottom: 5rem;
+        }
+        .top-title{
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-40%);
+           font-size: 4rem;
+        }
+        
+        .service-moc{
+            position: absolute;
+            width: 80%;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+        }  
+        .news time	{
+            font-size: 1.1rem;
+        }
+        .news .text	{
+            margin-left: 6%;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .demerit{
+            width: 100%;
+            margin-top: 20rem; 
+        }
+        .demerit-content{
+            width: 90%;
+            height: 250px;
+        }
+        .demerit-content p{
+            font-size: 1.5rem;
+         }
+        
+        .merit{
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+        .merit-content{
+            width: 90%;
+            height: 250px;
+        }
+        .merit-content p{
+           font-size: 1.5rem;
+        }
+        .problem{
+            width: 100%;
+            margin-top: 20rem;
+            margin-bottom: 15rem;
+        }
+     
+        .problem-card-sort{
+            position: relative;
+            width: 180px;
+            height: 140px;
+            margin-bottom: 10rem;
+        }
+        
+        .problem-title{
+            font-size: 1.5rem;
+        }
+        .problem-content{
+            font-size: 1.3rem;
+        }
+        .solution{
+            width: 100%;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
+       
+        .solution-card-sort{
+            width: 180px;
+            height: 140px; 
+            margin-bottom: 10rem;
+        }
+        .solution-title{
+            font-size: 1.5rem;
+        }
+        .solution-content{
+            font-size: 1.3rem;
+        }
+        .service-card a{
+            position: relative;
+            width: 80%;
+            height: 300px;
+            margin-bottom: 10rem;
+        }
+        .service-title{
+            font-size: 1.5rem;
+        }
+        .service-content{
+            font-size: 1.2rem;
+        }
+        .service-image{
+            width: 27%;
+        }
+        .works-card1{ 
+            margin-top: 5rem;
+        }
+        .works-card2{
+            margin-top: 5rem;
+        }
+        .works-card-sort{
+            width: 180px;
+            height: 150px;
+        }
+        .works-title{
+            font-size: 1.4rem;
+        }
+        .works-content{
+            font-size: 1rem;
+        }
+        .contact{
+            height: 180px;  
+        }
+        .contact-title{
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .ctr-contact{
+          width: 55%;
+        }
+        .menu-card a{
+            width: 120px;
+            height: 80px;
+        }
+        .menu-title{
+            font-size: 1.5rem;
+        }
+        .menu-icon{
+            width: 20%;
+        }
+     }
+
+
+
+
+
+
+     @media (max-width: 376px) {
+     
+     
+        #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+            font-size: 1.5rem;
+        }
+        #section1{
+            height: 812px;
+        }  
+        .top-title{
+           font-size: 3.7rem;
+        }
+        .news time	{
+            font-size: 1rem;
+        }
+        .news .text	{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .demerit{
+            width: 100%;
+            margin-top: 20rem;
+            
+        }
+        .demerit-content p{
+            font-size: 1.3rem;
+         }
+      .merit{
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+        .merit-content p{
+           font-size: 1.3rem;
+        } 
+        .problem{
+            margin-top: 20rem;
+        
+        }
+        .problem-card-sort{
+            position: relative;
+            width: 160px;
+            height: 120px;
+            margin-bottom: 5rem;
+        }
+        
+        .problem-title{
+            font-size: 1.4rem;
+        }
+        .problem-content{
+            font-size: 1.2rem;
+        }
+        .solution-card-sort{
+            width: 160px;
+            height: 120px; 
+            margin-bottom: 5rem;
+        }
+        .solution-title{
+            font-size: 1.4rem;
+        }
+        .solution-content{
+            font-size: 1.2rem;
+        }
+        .service-card a{
+            position: relative;
+            width: 80%;
+            height: 280px;
+            margin-bottom: 10rem;
+        }
+        .service-title{
+            font-size: 1.4rem;
+        }
+        .service-content{
+            font-size: 1.1rem;
+        }
+        .service-image{
+            width: 35%;
+        }
+    
+        .works-card-sort{
+            width: 160px;
+            height: 140px;
+        }
+        .works-title{
+            font-size: 1.2rem;
+        }
+        .works-content{
+            font-size: 1rem;
+        }
+        .contact-title{
+            font-size: 1.6rem;
+       
+        }
+        .menu-card a{
+            width: 110px;
+            height: 70px;
+        }
+        .menu-title{
+            font-size: 1.4rem;
+        }
+        .menu-icon{
+            width: 18%;
+        }
+       
+       
+      
+     }
+
+     @media (max-width: 321px) {
+        #section2-about h2, #section3-service h2, #section4 h2, #section5-contact h2, #section6 h2{
+            font-size: 1.5rem;
+        }
+        #section1{
+            height: 568px;
+        }  
+        .top-title{
+           font-size: 3rem;
+        }
+        
+        .demerit-content{
+            position: relative;
+            width: 90%;
+            height: 240px;
+           border: dotted #186AA5 3px;
+           background-color: rgba(255, 255, 255, 0.5);
+           margin-right: auto;
+           margin-left: auto;
+        }
+        .demerit-content p{
+            font-size: 1.2rem;
+         }
+        
+         .merit-content{
+            position: relative;
+            width: 90%;
+            height: 240px;
+           border: dotted #186AA5 3px;
+           background-color: rgba(255, 255, 255, 0.5);
+           margin-right: auto;
+           margin-left: auto;
+        }
+        .merit-content p{
+           font-size: 1.2rem;
+        }
+        .problem-card-sort{
+            position: relative;
+            width: 140px;
+            height: 100px;
+            margin-bottom: 5rem;
+        }
+        
+        .problem-title{
+            font-size: 1.2rem;
+        }
+        .problem-content{
+            font-size: 1rem;
+        }
+        .solution-card-sort{
+            width: 140px;
+            height: 100px; 
+            margin-bottom: 5rem;
+        }
+        .solution-title{
+            font-size: 1.2rem;
+        }
+        .solution-content{
+            font-size: 1rem;
+        }
+        .service-card a{
+            position: relative;
+            width: 80%;
+            height: 250px;
+            margin-bottom: 10rem;
+        }
+        .service-title{
+            font-size: 1.2rem;
+        }
+        .service-content{
+            font-size: 1rem;
+        }
+        .service-image{
+            width: 35%;
+        }
+    
+        .works-card-sort{
+            width: 140px;
+            height: 120px;
+        }
+        .works-title{
+            font-size: 1.1rem;
+        }
+        .works-content{
+            font-size: 1rem;
+        }
+        .contact{
+            position: relative;
+            width: 100%;
+            height: 140px;
+            background: linear-gradient(to right,rgba(187, 255, 0, 0.5),rgba(0, 220, 255, 0.5));
+            
+        }
+     
+        .ctr-contact{
+          position: absolute;
+          width: 60%;
+          bottom: 10%;
+          left: 50%;
+          transform: translate(-50% ,-10%);
+        }
+        .contact-title{
+            font-size: 1.4rem;
+        }
+        .menu-card a{
+            width: 100px;
+            height: 70px;
+        }
+        .menu-title{
+            font-size: 1.2rem;
+        }
+        .menu-icon{
+            width: 18%;
+        }
+      
+     }

@@ -1,0 +1,680 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+}
+
+h1,h2,p{
+    color: #186AA5;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: normal;
+}
+li a{
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #186AA5;
+}
+
+
+
+
+
+.circle-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    
+}
+.right-circle{
+    position: absolute;
+    width: 60%;
+    top: 0%;
+    right: 0%;
+    transform: translate(-0%, 0%);
+    z-index: -2;
+}
+.left-circle{
+    position: absolute;
+    width: 60%;
+    top: 65%;
+    left: 0%;
+    transform: translate(-0%, -65%);
+    z-index: -2;
+}
+.contents{
+    position: absolute;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    z-index: 3;
+}
+
+#section1{
+    height: 1080px;
+    position: relative;
+}
+.top-title{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 4.5rem;
+}
+#section2{
+    position: relative;
+    width: 100%;
+    height: 200px;  
+}
+#section3{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+#section4{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  
+}#section5{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  
+}#section6{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  
+}#section7{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  
+}#section8{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  
+}#section9{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  
+}#section10{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  
+}#section11{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+#section12{
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+}
+#section13{
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+}
+.flow{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.flow-number{
+    position:relative;
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    top: 0%;
+    left: 30%;
+    transform: translate(-30%, 0%);
+    border: solid 1px #186AA5;
+    border-radius: 50%;
+    background-color: #186AA5;
+}
+.flow-number p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index:5 ;
+    color: #fff;
+}
+.flow-number::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 5px;
+    height: 200px;
+    margin: auto;
+    z-index: 2;
+   background-color: #186AA5;
+}
+.flow-content{
+    position: absolute;
+    width: 800px;
+    top: 0%;
+    right: 5%;
+    transform: translate(-5%, 0%);
+}
+.flow-content p{
+    font-size: 1.7rem;
+}
+.flow-content h2{
+    font-size: 3rem;
+}
+#section5 a{
+ text-decoration: none;
+ font-weight: 600;
+ color:darkgray;
+   
+}
+.contact{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right,rgba(187, 255, 0, 0.5),rgba(0, 220, 255, 0.5));
+}
+.contact-text-all{
+    width: 100%;
+    margin-top: 10%;
+    padding-top: 2%;
+}
+.contact-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+.ctr-contact{
+  position: absolute;
+  width: 25%;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50% ,-10%);
+}
+.contact a:hover{
+    opacity: 0.7;
+}
+.menu{
+    width: 100%;
+    margin-top: 10rem;   
+}
+.menu-card{
+    display: flex;
+    width: 100%;
+}
+.menu-card a{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+    text-align: center;
+   background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+}
+.menu-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.menu-icon{
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+}
+.menu-card a:hover{
+    background: linear-gradient(to right,rgb(96, 186, 255),rgba(12, 149, 254, 0.8));
+ }
+
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width: 1200px){
+
+}
+@media (max-width: 1500px){
+    #section1{
+        height: 900px;
+    }
+    .contact-title{
+        font-size: 3.5rem;
+    }
+    .ctr-contact{
+        width: 30%;
+      }
+}
+@media (max-width: 1200px){
+    .flow-number{
+        top: 0%;
+        left: 25%;
+        transform: translate(-25%, 0%);
+    }
+    .flow-content{
+        position: absolute;
+        width: 700px;
+        top: 0%;
+        right: 1%;
+        transform: translate(-1%, 0%);
+    }
+}
+@media (min-width:900px) and (max-width: 1025px){
+    .ctr-contact{
+        width: 40%;
+      }
+      .menu-card a{
+        width: 270px;
+        height: 160px;
+    }
+    .menu-title{
+        font-size: 2.5rem;
+    }
+    .menu-icon{
+        width: 18%;
+    }
+}
+@media (orientation:landscape) and 
+    (max-width:1025px){
+        .top-title{
+            font-size: 4rem;
+            }
+        .flow-number{
+            top: 0%;
+            left: 20%;
+            transform: translate(-20%, 0%);
+        }
+        .flow-content{
+            position: absolute;
+            width: 700px;
+            top: 0%;
+            right: 1%;
+            transform: translate(-1%, 0%);
+        }  
+        .flow-content h2{
+            font-size: 2.5rem;
+        }
+        .flow-content p{
+            font-size: 1.5rem;
+        }
+        .ctr-contact{
+            width: 35%;
+          }
+          .menu-card a{
+            width: 300px;
+            height: 180px;
+        }
+        .menu-title{
+            font-size: 2.3rem;
+        }
+      
+    }
+@media (max-width: 900px){
+  
+    .flow-number{
+        top: 0%;
+        left: 15%;
+        transform: translate(-15%, 0%);
+    }
+    .flow-content{
+        width: 600px;
+        top: 0%;
+        right: 1%;
+        transform: translate(-1%, 0%);
+    }  
+    .flow-content h2{
+        font-size: 2.5rem;
+    }
+    .flow-content p{
+        font-size: 1.5rem;
+    }
+    .ctr-contact{
+        width: 45%;
+      }
+      .menu-card a{
+        width: 250px;
+        height: 160px;
+    }
+    .menu-title{
+        font-size: 2.3rem;
+    }
+  
+}
+@media (orientation:landscape) and (max-width:900px){
+    .flow-number{
+        width: 40px;
+        height: 40px;
+    }
+    .flow-number p{
+        font-size: 2rem;
+    }
+    .flow-content{
+        position: absolute;
+        width: 580px;
+        top: 0%;
+        right: 1%;
+        transform: translate(-1%, 0%);
+    }  
+    .flow-content h2{
+        font-size: 2.2rem;
+    }
+    .flow-content p{
+        font-size: 1.3rem;
+    }
+    .menu-card a{
+        width: 240px;
+        height: 150px;
+    }
+    .menu-title{
+        font-size: 2.2rem;
+    }
+    .menu-icon{
+        width: 18%;
+    }
+    .contact{
+        height: 250px;
+    }
+    .contact-title{
+        font-size: 3rem;
+    }
+    .ctr-contact{
+        width: 30%;
+      }
+}
+@media (max-width: 769px){
+    .flow-number{
+        top: 0%;
+        left: 15%;
+        transform: translate(-15%, 0%);
+    }
+    .flow-content{
+        width: 550px;
+        top: 0%;
+        right: 1%;
+        transform: translate(-1%, 0%);
+    } 
+    .flow-content h2{
+        font-size: 3rem;
+    }
+    .flow-content p{
+        font-size: 2rem;
+    }
+    .contact-title{
+        font-size: 2.9rem;
+    }
+    .ctr-contact{
+        width: 50%;
+      }
+      .menu-card a{
+        width: 230px;
+        height: 150px;
+    }
+    .menu-title{
+        font-size: 2.5rem;
+    }
+    .menu-icon{
+        width: 18%;
+    }
+      
+}
+@media (orientation:landscape) and
+(max-width: 769px){
+    .top-title{
+        font-size: 3rem;
+        }
+        .flow-content h2{
+            font-size: 2.5rem;
+        }
+        .flow-content p{
+            font-size: 1.8rem;
+        }
+        .contact-title{
+            font-size: 2.5rem;
+        }
+        .ctr-contact{
+            width: 40%;
+          }
+          .menu-card a{
+            width: 210px;
+            height: 140px;
+        }
+        .menu-title{
+            font-size: 2.3rem;
+        }
+}
+@media (max-width: 700px){
+    .flow-number{
+        top: 0%;
+        left: 10%;
+        transform: translate(-10%, 0%);
+    }
+    .flow-content{
+        width: 500px;
+        top: 0%;
+        right: 1%;
+        transform: translate(-1%, 0%);
+    } 
+    .flow-content h2{
+        font-size: 2.5rem;
+    }
+    .flow-content p{
+        font-size: 1.8rem;
+    }
+    .contact-title{
+        font-size: 2.5rem;
+    }
+    .ctr-contact{
+        width: 40%;
+      }
+    .menu-card a{
+        width: 180px;
+        height: 120px;
+    }
+    .menu-title{
+        font-size: 2rem;
+    }
+} 
+@media (max-width: 599px){
+    .top-title{
+        font-size: 2.5rem;
+        }
+    .flow-content{
+        width: 400px;
+    } 
+    .flow-content h2{
+        font-size: 1.8rem;
+    }
+    .flow-content p{
+        font-size: 1.4rem;
+    }
+    .contact{
+        height: 200px;
+    }
+    .contact-title{
+        font-size: 2rem;
+    }
+    .ctr-contact{
+        width: 50%;
+      }
+    .menu-card a{
+        width: 160px;
+        height: 110px;
+    }
+    .menu-title{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 481px){
+    #section1{
+        height:400px
+    }
+    .flow-content{
+        width: 350px;
+    } 
+    .flow-content h2{
+        font-size: 1.6rem;
+    }
+    .flow-content p{
+        font-size: 1.2rem;
+    }
+    .menu-card a{
+        width: 140px;
+        height: 90px;
+    }
+    .menu-title{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 416px){
+    #section1{
+        height: 500px;
+    }
+    #section12{
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+    }
+    #section13{
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+    }
+    .top-title{
+        font-size: 3rem;
+        }
+        .flow-number{
+            width: 40px;
+            height: 40px;
+            top: 0%;
+            left: 10%;
+            transform: translate(-10%, 0%);
+        }
+        .flow-number p{
+            font-size: 1.8rem;
+        }
+        .flow-content{
+            width: 300px;
+        } 
+        .flow-content h2{
+            font-size: 1.8rem;
+        }
+        .flow-content p{
+            font-size: 1.2rem;
+        }
+        .contact{
+            height: 180px;
+        }
+        .contact-title{
+            font-size: 1.8rem;
+        }
+        .ctr-contact{
+            width: 60%;
+          }
+          .menu-card a{
+            width: 120px;
+            height: 90px;
+        }
+        .menu-title{
+            font-size: 1.6rem;
+        }
+        .menu-icon{
+            width: 18%;
+        }
+
+}
+@media (max-width: 376px){
+    .top-title{
+        font-size: 2.2rem;
+        }
+    #section1{
+        height: 400px;
+    }
+    .flow-content{
+        width: 260px;
+    } 
+    .contact{
+        height: 150px;
+    }
+    .contact-title{
+        font-size: 1.6rem;
+    }
+    .ctr-contact{
+        width: 60%;
+      }
+      .menu-card a{
+        width: 110px;
+        height: 70px;
+    }
+    .menu-title{
+        font-size: 1.4rem;
+    }
+    .menu-icon{
+        width: 18%;
+    }
+}
+@media (max-width: 321px){
+    .top-title{
+        font-size: 2rem;
+        }
+        .flow-number{
+            width: 30px;
+            height: 30px;
+        }
+        .flow-content{
+            width: 220px;
+        } 
+        .flow-content h2{
+            font-size: 1.6rem;
+        }
+        .flow-content p{
+            font-size: 1.2rem;
+        }
+        .contact{
+            height: 120px;
+        }
+        .contact-title{
+            font-size: 1.4rem;
+        }
+        .menu-card a{
+            width: 100px;
+            height: 60px;
+        }
+        .menu-title{
+            font-size: 1.2rem;
+        }
+        .menu-icon{
+            width: 18%;
+        }
+}

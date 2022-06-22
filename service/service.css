@@ -1,0 +1,1056 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    color: #fff;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+h1,h2,p{
+    color: #186AA5;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: normal;
+}
+
+li a{
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #186AA5;
+}
+
+
+
+
+
+
+
+
+
+
+.circle-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+
+.right-circle{
+    position: absolute;
+    width: 60%;
+    top: 0%;
+    right: 0%;
+    transform: translate(-0%, 0%);
+    z-index: -2;
+}
+.left-circle{
+    position: absolute;
+    width: 60%;
+    top: 25%;
+    left: 0%;
+    transform: translate(-0%, -25%);
+    z-index: -2;
+}
+.right-circle2{
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    right: 0%;
+    transform: translate(-0%, -50%);
+    z-index: -2;
+}
+
+.left-circle2{
+    position: absolute;
+    width: 60%;
+    top: 80%;
+    left: 0%;
+    transform: translate(-0%, -80%);
+    z-index: -2;
+}
+
+
+
+.contents{
+    position: absolute;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0%;
+    z-index: 3;
+}
+
+
+#section1{
+    height: 800px;
+}
+
+#section2, #section3, #section4, #section5, #section6{
+    width: 100%;
+    margin-bottom: 30rem;
+}
+
+ #section2 h1, #section3 h1, #section4 h1, #section5 h1, #section6 h1{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 20rem;
+}
+
+#section2 h2, #section3 h2, #section4 h2, #section5 h2, #section6 h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.price{
+    font-size: 2.5rem;
+    color: #186AA5;
+}
+
+#section1{
+    position: relative;
+}
+
+.top-title{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 4.5rem;
+}
+
+
+.service-box{
+    width: 100%;
+    text-align: center;
+}
+.service-name{
+    font-size: 3rem;
+}
+.service-box p{
+    font-size: 2rem;
+}
+
+
+.company{
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+
+.company-content{
+    position: relative;
+    width: 70%;
+    height: 300px;
+   border: dotted #186AA5 3px;
+  
+   margin-right: auto;
+   margin-left: auto;
+   text-align: center;
+}
+.company-content p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+ }
+
+
+.service-naiyou{
+    position: relative;
+    width: 100%;
+    height: 600px;
+   
+}
+
+.service-moc{
+    position: absolute;
+    width: 40%;
+   top: 50%;
+   left: 10%;
+   transform: translate(-10%, -50%);
+}
+
+.service-company-content1{
+position: absolute;
+height: auto;
+top: 50%;
+right: 23%;
+transform: translate(-23%, -50%);
+
+}
+
+
+.service-company-content2{
+position: absolute;
+height: auto;
+top: 50%;
+right: 1%;
+transform: translate(-1%, -50%);
+
+}
+
+
+.service-naiyou li{
+    width: 300px;
+    padding: 0;
+   margin-bottom: 5rem;
+   list-style: none;
+}
+.svg{
+   width: 100%;
+}
+.svg-hover:hover{
+    opacity: 0.5;
+    cursor: pointer;
+ }
+
+
+
+
+/*モーダルを開くボタン*/
+
+  /*モーダル本体の指定 + モーダル外側の背景の指定*/
+  .modal-container1,.modal-container2,.modal-container3,.modal-container4,.modal-container5
+  ,.modal-container6,.modal-container7,.modal-container8,.modal-container9,.modal-container10{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    z-index: 5000;
+  }
+  /*モーダル本体の擬似要素の指定*/
+  .modal-container1:before,.modal-container2:before,.modal-container3:before,.modal-container4:before,.modal-container5:before
+  ,.modal-container6:before,.modal-container7:before,.modal-container8:before,.modal-container9:before,.modal-container10:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  /*モーダル本体に「active」クラス付与した時のスタイル*/
+  .modal-container1.active,.modal-container2.active,.modal-container3.active,.modal-container4.active,.modal-container5.active
+  ,.modal-container6.active,.modal-container7.active,.modal-container8.active,.modal-container9.active,.modal-container10.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  /*モーダル枠の指定*/
+  .modal-body{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 1000px;
+    width: 90%;
+  }
+  /*モーダルを閉じるボタンの指定*/
+  .modal-close{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -40px;
+    left: -40px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+  /*モーダル内のコンテンツの指定*/
+  .modal-content{
+    background: #fff;
+  }
+  .modal-title{
+   font-size: 3rem;
+   font-weight: bold;
+   width: 80%;
+   height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  }
+  .modal-gaiyou p{
+    width: 80%;
+    font-size: 2rem;
+    color: #186AA5;
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+    
+  }
+ 
+  .L{
+      width: 80%;
+      height: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 5rem;
+  }
+
+
+
+
+.service-option{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 10rem;
+}
+
+.option-content{
+position: absolute;
+width: auto;
+height: auto;
+top: 50%;
+left: 10%;
+transform: translate(-10%, -50%);
+margin-top: 5rem;
+
+}
+.option-content-price{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%); 
+    margin-top: 5rem;
+}
+
+.service-option li{
+list-style: none;
+font-size: 2rem;
+font-weight: bold;
+color: #186AA5;
+margin-bottom: 5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+.contact{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right,rgba(187, 255, 0, 0.5),rgba(0, 220, 255, 0.5));
+    
+}
+
+.contact-text-all{
+    width: 100%;
+    margin-top: 10%;
+ 
+    padding-top: 2%;
+}
+
+.contact-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+  
+
+}
+
+.ctr-contact{
+  position: absolute;
+  width: 25%;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50% ,-10%);
+}
+.contact a:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+.menu{
+    width: 100%;
+    margin-top: 10rem;
+     
+}
+
+.menu-card{
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+
+.menu-card a{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+    text-align: center;
+   background: linear-gradient(to right,rgba(160, 214, 254, 1),rgba(12, 149, 254, 0.8));
+}
+
+.menu-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+  
+
+}
+.menu-icon{
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+}
+.menu-card a:hover{
+    background: linear-gradient(to right,rgb(96, 186, 255),rgba(12, 149, 254, 0.8));
+ }
+
+
+
+
+
+
+@media (min-width:320px) and (max-width: 1200px){
+ 
+}
+@media (max-width: 1500px){
+
+}
+@media (max-width: 1200px){
+    .service-naiyou li{
+        width: 250px;
+    }
+    .option-content-price{
+        top: 50%;
+        left: 40%;
+        transform: translate(-40%, -50%); 
+
+    }
+}
+@media (min-width:900px) and (max-width: 1025px){
+    .service-naiyou{
+        position: relative;
+        width: 100%;
+        height: 1100px;
+       
+        
+    }
+    .service-moc{
+        position: absolute;
+        width: 55%;
+       top: 10%;
+       left: 50%;
+       transform: translate(-50%, -10%); 
+    }
+    .service-company-content1{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    left: 25%;
+    transform: translate(-25%, -90%);
+    }
+    .service-company-content2{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    right: 10%;
+    transform: translate(-10%, -90%);
+    }
+    .service-naiyou li{
+        width: 350px;
+    }
+   
+    .menu-card a{
+        width: 300px;
+        height: 200px;
+    }
+    .menu-title{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .menu-icon{
+        width: 18%;
+    }
+    .ctr-contact{
+        width: 32%;
+      }
+}
+@media (orientation:landscape) and 
+    (max-width:1025px){
+    
+        .service-naiyou li{
+            width: 300px;
+        }
+        
+        .menu-card a{
+            width: 300px;
+            height: 200px;
+        }
+        .menu-title{
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .menu-icon{
+            width: 18%;
+        }
+        .ctr-contact{
+            width: 32%;
+          }
+
+    }
+@media (max-width: 900px){
+    .company-content{
+        width: 90%;
+    }
+    .service-naiyou{
+        position: relative;
+        width: 100%;
+        height: 1150px;
+       
+        
+    }
+    .service-moc{
+        position: absolute;
+        width: 80%;
+       top: 10%;
+       left: 50%;
+       transform: translate(-50%, -10%); 
+    }
+    .service-company-content1{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    left: 25%;
+    transform: translate(-25%, -90%);
+    }
+    .service-company-content2{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    right: 10%;
+    transform: translate(-10%, -90%);
+    }
+    .service-naiyou li{
+        width: 280px;
+    }
+    .menu-card a{
+        width: 260px;
+        height: 180px;
+    }
+    .menu-title{
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+    .menu-icon{
+        width: 18%;
+    }
+    .ctr-contact{
+        width: 45%;
+      }
+}
+@media (orientation:landscape) and (max-width:900px){
+    .company-content{
+        width: 90%;
+    }
+    .service-naiyou{
+        height: 980px;
+    }
+    .service-moc{
+        width: 80%;
+    }
+    .service-naiyou li{
+        width: 250px;
+      margin-bottom: 2.5rem;
+    }
+    .modal-title{
+        font-size: 2.5rem;
+       }
+       .modal-gaiyou p{
+        font-size: 1.8rem;
+      margin-bottom: 5rem;
+        
+      }
+    .menu-card a{
+        width: 250px;
+        height: 180px;
+    }
+    .menu-title{
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+}
+@media (max-width: 769px){
+    .service-naiyou{
+        position: relative;
+        width: 100%;
+        height: 1100px;
+       
+        
+    }
+    .service-moc{
+        position: absolute;
+        width: 85%;
+       top: 10%;
+       left: 50%;
+       transform: translate(-50%, -10%); 
+    }
+    .service-company-content1{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    left: 25%;
+    transform: translate(-25%, -90%);
+    }
+    .service-company-content2{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    right: 10%;
+    transform: translate(-10%, -90%);
+    }
+    .service-naiyou li{
+        width: 260px;
+    }
+    .modal-title{
+        font-size: 2.8rem;
+       }
+    .menu-card a{
+        width: 240px;
+        height: 160px;
+    }
+    .menu-title{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+@media (orientation:landscape) and
+(max-width: 769px){
+    #section2 h2, #section3 h2, #section4 h2, #section5 h2, #section6 h2{
+        font-size: 2.5rem;
+    }
+    .price{
+        font-size: 2.2rem;
+    }
+    .top-title{
+        font-size: 4rem;
+        }
+        .service-box p{
+            font-size: 1.7rem;
+        }
+        .company-content p{
+            font-size: 1.6rem;
+         }
+         .service-naiyou{
+            height: 850px;
+        }
+         .service-naiyou li{
+            width: 220px;
+        }
+        .service-moc{
+            width: 80%;
+        }
+        .modal-title{
+            font-size: 2.2rem;
+           }
+           .modal-gaiyou p{
+            font-size: 1.6rem;
+          }
+        .contact{
+            height: 250px;
+        }
+        .contact-title{
+            font-size: 2.5rem;
+        }
+        .ctr-contact{
+          width: 40%;
+        }
+        .menu-card a{
+            width: 220px;
+            height: 140px;
+        }
+        .menu-title{
+            font-size: 2rem;
+        }
+}
+@media (max-width: 700px){
+    .price{
+        font-size: 2rem;
+    }
+    .top-title{
+        font-size: 3.5rem;
+        }
+        .service-naiyou{
+            height: 800px;
+        }
+        .menu-card a{
+            width: 200px;
+            height: 120px;
+        }
+        .menu-title{
+            font-size: 1.8rem;
+        }
+        .option-content-price{
+            top: 50%;
+            left: 45%;
+            transform: translate(-45%, -50%); 
+    
+        }
+}
+@media (max-width: 599px){
+    #section2 h2, #section3 h2, #section4 h2, #section5 h2, #section6 h2{
+        font-size: 2.3rem;
+    }
+    .price{
+        font-size: 1.8rem;
+    }
+    .top-title{
+        font-size: 3.2rem;
+        }
+        .company-content p{
+            font-size: 1.4rem;
+         }
+         .service-naiyou{
+            height: 750px;
+        }
+        .service-naiyou li{
+            width: 180px;
+        }
+        .service-moc{
+            width: 80%;
+           top: 10%;
+           left: 50%;
+           transform: translate(-50%, -10%); 
+        }
+        .service-company-content1{
+        height: auto;
+        top: 90%;
+        left: 22%;
+        transform: translate(-22%, -90%);
+        }
+        .service-company-content2{
+        height: auto;
+        top: 90%;
+        right: 7%;
+        transform: translate(-7%, -90%);
+        }
+        .service-option{
+        margin-top: 7rem;
+        }
+        .service-option li{
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            }
+            .L{
+                width: 95%;
+            }
+            .modal-title{
+                font-size: 2rem;
+               }
+               .modal-gaiyou p{
+                font-size: 1.4rem;
+                
+              }
+            .contact{
+                height: 200px;
+            }
+            .contact-title{
+                font-size: 2rem;
+            }
+            .menu-card a{
+                width: 160px;
+                height: 100px;
+            }
+            .menu-title{
+                font-size: 1.6rem;
+            }
+}
+@media (max-width: 481px){
+    #section2 h2, #section3 h2, #section4 h2, #section5 h2, #section6 h2{
+        font-size: 1.8rem;
+    }
+    .price{
+        font-size: 1.6rem;
+    }
+    .top-title{
+        font-size: 3rem;
+        }
+        .service-box p{
+            font-size: 1.5rem;
+        }
+        .company-content p{
+            font-size: 1.3rem;
+         }
+         .service-naiyou{
+            height: 670px;
+        }
+         .service-naiyou li{
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        .service-company-content1{
+            left: 20%;
+            transform: translate(-20%, -90%);
+            }
+            .service-company-content2{
+            right: 5%;
+            transform: translate(-5%, -90%);
+            }
+        .service-option{
+            height: 250px;
+            margin-top: 10rem;
+        }
+        .service-option{
+            margin-top: 6rem;
+            }
+        .service-option li{
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            }
+            .modal-title{
+                font-size: 1.8rem;
+               }
+            .contact{
+                height: 160px;
+            }
+            .contact-title{
+                font-size: 1.8rem;
+            }
+            .ctr-contact{
+                width:45%;
+              }
+            .menu-card a{
+                width: 140px;
+                height: 90px;
+            }
+            .menu-title{
+                font-size: 1.4rem;
+            }
+}
+@media (max-width: 416px){
+    #section1{
+        height: 400px;
+    }
+    .service-naiyou{
+        position: relative;
+        width: 100%;
+        height: 650px;
+       
+        
+    }
+    .service-moc{
+        position: absolute;
+        width: 90%;
+       top: 10%;
+       left: 50%;
+       transform: translate(-50%, -10%); 
+    }
+    .service-company-content1{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    left: 20%;
+    transform: translate(-20%, -90%);
+    }
+    .service-company-content2{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    right: 5%;
+    transform: translate(-5%, -90%);
+    }
+    .service-naiyou li{
+        width: 155px;
+    }
+    .service-option li{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        }
+        .service-option{
+            height: 300px;
+            margin-top: 5rem;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .modal-gaiyou p{
+            font-size: 1.3rem;
+          margin-bottom: 4rem;
+            
+          }
+        .ctr-contact{
+            width: 55%;
+          }
+          .menu-card a{
+            width: 120px;
+            height: 90px;
+        }
+        .menu-title{
+            font-size: 1.4rem;
+        }
+}
+@media (max-width: 376px){
+    #section2 h2, #section3 h2, #section4 h2, #section5 h2, #section6 h2{
+        font-size: 1.5rem;
+    }
+    .price{
+        font-size: 1.4rem;
+    }
+    .top-title{
+        font-size: 2.5rem;
+        }
+        
+    #section1{
+        height: 400px;
+    }
+    .service-box p{
+        font-size: 1.2rem;
+    }
+    .company-content p{
+        font-size: 1.2rem;
+     }
+     .service-naiyou{
+        position: relative;
+        width: 100%;
+        height: 580px;
+       
+        
+    }
+    .service-moc{
+        position: absolute;
+        width: 85%;
+       top: 10%;
+       left: 50%;
+       transform: translate(-50%, -10%); 
+    }
+    .service-company-content1{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    left: 20%;
+    transform: translate(-20%, -90%);
+    }
+    .service-company-content2{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    right: 5%;
+    transform: translate(-5%, -90%);
+    }
+    .service-naiyou li{
+        width: 140px;
+    }
+    .service-option li{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        }
+        .modal-title{
+            font-size: 1.6rem;
+           }
+      
+        .contact{
+            height: 130px;
+        }
+        .contact-title{
+            font-size: 1.5rem;
+        }
+        .ctr-contact{
+            width: 45%;
+          }
+          .menu-card a{
+            width: 110px;
+            height: 80px;
+        }
+        .menu-title{
+            font-size: 1.2rem;
+        }
+}
+@media (max-width: 321px){
+    .service-naiyou{
+        position: relative;
+        width: 100%;
+        height: 500px;
+       
+        
+    }
+    .service-moc{
+        position: absolute;
+        width: 85%;
+       top: 10%;
+       left: 50%;
+       transform: translate(-50%, -10%); 
+    }
+    .service-company-content1{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    left: 18%;
+    transform: translate(-18%, -90%);
+    }
+    .service-company-content2{
+    position: absolute;
+    height: auto;
+    top: 90%;
+    right: 5%;
+    transform: translate(-5%, -90%);
+    }
+    .service-naiyou li{
+        width: 120px;
+    }
+    .option-content-price{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+
+    }
+    .modal-title{
+        font-size: 1.4rem;
+       }
+       .modal-gaiyou p{
+        font-size: 1.1rem;
+        
+      }
+        .contact-title{
+            font-size: 1.3rem;
+        }
+        .ctr-contact{
+            width: 50%;
+          }
+          .menu-card a{
+            width: 95px;
+            height: 70px;
+        }
+        .menu-title{
+            font-size: 1.2rem;
+        }
+}
