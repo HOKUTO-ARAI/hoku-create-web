@@ -84,7 +84,7 @@ a{
 #section1{
     height: 1080px;
     position: relative;
-    z-index: 3;
+    z-index: -100;
 }
 
  #section3-service, #section4, #section5-contact{
