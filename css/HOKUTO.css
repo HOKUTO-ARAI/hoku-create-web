@@ -483,6 +483,7 @@ z-index: 30;
     vertical-align: middle;
     max-width: 1000px;
     width: 90%;
+    z-index: 6000;
   }
   /*モーダルを閉じるボタンの指定*/
   .modal-close{
