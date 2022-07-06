@@ -78,7 +78,6 @@ ScrollReveal().reveal('.anime',{
 	  container.addClass('active');
 
 	 
-	  $('body').css('position:fixed'); 
 	  return false;
 	});
   
