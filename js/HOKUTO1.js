@@ -104,7 +104,7 @@ ScrollReveal().reveal('.anime',{
 	//開くボタンをクリックしたらモーダルを表示する
 	open.on('click',function(){ 
 	  container.addClass('active');
-	  
+	  $('body').css('overflow-y', 'hidden'); 
 	  return false;
 	});
   
