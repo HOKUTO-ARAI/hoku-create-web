@@ -76,8 +76,8 @@ ScrollReveal().reveal('.anime',{
 	//開くボタンをクリックしたらモーダルを表示する
 	open.on('click',function(){ 
 	  container.addClass('active');
-
-	 
+	  $('body').css('overflow-y', 'hidden'); 
+	  $('body').css('position:fixed'); 
 	  return false;
 	});
   
@@ -104,8 +104,7 @@ ScrollReveal().reveal('.anime',{
 	//開くボタンをクリックしたらモーダルを表示する
 	open.on('click',function(){ 
 	  container.addClass('active');
-	  $('body').css('overflow-y', 'hidden'); 
-	  $('body').css('position:fixed'); 
+	  
 	  return false;
 	});
   
