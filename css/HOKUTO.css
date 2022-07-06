@@ -595,7 +595,8 @@ z-index: 30;
     opacity: 1;
     visibility: visible;
     overflow-y: scroll;
-  }
+    min-height: 100vh;
+}
 
 
 
