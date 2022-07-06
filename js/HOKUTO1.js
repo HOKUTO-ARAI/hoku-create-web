@@ -84,6 +84,8 @@ ScrollReveal().reveal('.anime',{
 	//閉じるボタンをクリックしたらモーダルを閉じる
 	close.on('click',function(){  
 	  container.removeClass('active');
+	  $('body').css('overflow-y', 'hidden'); 
+	  $('body').css('position:fixed'); 
 	});
   
 	//モーダルの外側をクリックしたらモーダルを閉じる
